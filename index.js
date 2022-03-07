@@ -10,7 +10,7 @@ const serviceAccount = require('./public/alt-flair-nft-firebase-adminsdk-x7ei5-0
 //endregion
 
 //region Config
-let PORT = 8080;
+let PORT = process.env.PORT || 3000;
 
 const app = express()
     .set('port', PORT)
