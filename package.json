@@ -1,0 +1,30 @@
+{
+  "name": "metadata-api-nodejs",
+  "version": "1.0.0",
+  "description": "Sample metadata API for crypto collectibles",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "nodemon index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Alex Atallah <alex.atallah@opensea.io>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "firebase": "^9.6.8",
+    "firebase-admin": "^10.0.2",
+    "moment": "^2.22.2",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "engines": {
+    "node": "8.11.2"
+  }
+}

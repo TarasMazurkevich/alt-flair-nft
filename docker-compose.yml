@@ -1,0 +1,19 @@
+version: '3'
+services:
+#qweas17
+# main
+   web:
+     image: metadata-api-nodejs
+     build: .
+     container_name: metadata-api-nodejs
+     restart: always
+     ports:
+       - "8080:80"
+     networks:
+       trustnet:
+         ipv4_address: 172.26.0.6
+
+
+networks:
+  trustnet:
+    external: true
